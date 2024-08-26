@@ -1,0 +1,7 @@
+<div>
+  <p>Number of posts: {{ filteredPosts.length }}</p>
+  <button (click)="restore()">Restore</button>
+</div>
+@for (post of filteredPosts; track post.id) { 
+  <app-post [post]="post" (deleteClicked)="delete($event)" />
+}

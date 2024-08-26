@@ -1,0 +1,8 @@
+div {
+  display: flex;
+  align-items: center;
+}
+
+div > p {
+  margin-right: 0.5rem;
+}
